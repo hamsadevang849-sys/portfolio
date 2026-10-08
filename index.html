@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devanga Hamsa S | Portfolio | AI/ML & Software Developer</title>
+
+    <meta
+        name="description"
+        content="Portfolio of Devanga Hamsa S - 3rd Year CSE Student, AI/ML & Software Developer, SalutexAI Intern, Hackathon Winner and Smart India Hackathon Finalist."
+    >
+    <meta name="keywords" content="Devanga Hamsa S, Software Developer, AI/ML, Computer Vision, SalutexAI, CSE Student, Bangalore, Web Development, Python, React, Next.js">
+    <meta name="author" content="Devanga Hamsa S">
+
+    <!-- Fonts: Inter for crisp, modern, human typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome Icons for professional UI iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Reading Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress-bar"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#home" class="logo" aria-label="Devanga Hamsa S Portfolio">
+                <span class="logo-text">Hamsa<span class="logo-dot">.</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#achievements" class="nav-item">Achievements</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta-btn">
+                    Get In Touch
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-grid">
+
+                <!-- Left: Hero Text -->
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-indicator"></span>
+                        <span>Available for AI & Software Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Devanga Hamsa S
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        CSE Student | AI/ML & Software Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        I am a third-year Computer Science Engineering student and currently an AI/Software Intern at <strong>SalutexAI</strong>. I specialize in building practical software, computer vision pipelines, and full-stack web applications that solve real-world problems.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Direct Contact Quick Badges -->
+                    <div class="hero-contact-chips">
+                        <!-- Email Chip -->
+                        <div class="contact-chip" title="Click to copy email">
+                            <i class="fa-regular fa-envelope chip-icon"></i>
+                            <a href="mailto:hamsadevanga849@gmail.com" class="chip-text">hamsadevanga849@gmail.com</a>
+                            <button class="chip-copy-btn" onclick="copyText('hamsadevanga849@gmail.com', 'Email copied to clipboard!')" aria-label="Copy Email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone Chip -->
+                        <div class="contact-chip" title="Click to call / copy">
+                            <i class="fa-solid fa-phone chip-icon"></i>
+                            <a href="tel:+917406473206" class="chip-text">+91 74064 73206</a>
+                            <a href="https://wa.me/917406473206" target="_blank" rel="noopener noreferrer" class="chip-whatsapp-btn" title="Chat on WhatsApp" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <button class="chip-copy-btn" onclick="copyText('+91 74064 73206', 'Phone number copied to clipboard!')" aria-label="Copy Phone">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="hero-social-links">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com/hamsadevang849-sys" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/devanga-hamsa-s-6608aa33b" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:hamsadevanga849@gmail.com" class="social-link" title="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Quick Profile Summary Card -->
+                <div class="hero-summary-card">
+                    <div class="summary-card-header">
+                        <span class="summary-card-title">Quick Overview</span>
+                        <span class="summary-status-pill">Available</span>
+                    </div>
+
+                    <div class="summary-card-body">
+                        <div class="summary-card-item">
+                            <span class="summary-label">Current Role</span>
+                            <span class="summary-value">AI / Software Intern</span>
+                            <span class="summary-note">SalutexAI</span>
+                        </div>
+
+                        <div class="summary-card-item">
+                            <span class="summary-label">Education</span>
+                            <span class="summary-value">B.E. Computer Science</span>
+                            <span class="summary-note">3rd Year Student</span>
+                        </div>
+
+                        <div class="summary-card-item">
+                            <span class="summary-label">Recognition</span>
+                            <span class="summary-value">Hackathon Winner & SIH Finalist</span>
+                            <span class="summary-note">Smart India Hackathon</span>
+                        </div>
+
+                        <div class="summary-card-item">
+                            <span class="summary-label">Contact</span>
+                            <div class="summary-contact-lines">
+                                <a href="mailto:hamsadevanga849@gmail.com" class="summary-link">
+                                    <i class="fa-regular fa-envelope"></i> hamsadevanga849@gmail.com
+                                </a>
+                                <a href="tel:+917406473206" class="summary-link">
+                                    <i class="fa-solid fa-phone"></i> +91 74064 73206
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hero Stats Row -->
+            <div class="hero-stats-row">
+                <div class="stat-box">
+                    <span class="stat-num">3rd</span>
+                    <span class="stat-desc">Year B.E. Computer Science</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-desc">Technical Projects Built</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">1st</span>
+                    <span class="stat-desc">Place Hackathon Winner</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">SIH</span>
+                    <span class="stat-desc">Smart India Hackathon Finalist</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Get To Know Me</h2>
+                <p class="section-subtitle">A dedicated computer science student turning technical concepts into robust, reliable applications.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <p>
+                        I am a third-year Computer Science Engineering student passionate about software development, artificial intelligence, and machine learning.
+                    </p>
+                    <p>
+                        Currently working as an AI/Software Intern at <strong>SalutexAI</strong>, I contribute to real-world software modules, build clean application components, and integrate AI/ML capabilities into practical workflows.
+                    </p>
+                    <p>
+                        I also actively compete in technical hackathons and engineering challenges, including winning a college hackathon and qualifying as a national finalist in the <strong>Smart India Hackathon (SIH)</strong>.
+                    </p>
+
+                    <div class="about-highlights-list">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Computer Vision & Edge AI workflows</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Full-stack web application development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>RESTful APIs & Backend services</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Rapid prototyping and teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details-col">
+                    <div class="info-card">
+                        <span class="info-label">Degree</span>
+                        <h4 class="info-value">B.E. Computer Science Engineering</h4>
+                        <p class="info-sub">3rd Year Undergrad · Strong CS Fundamentals</p>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-label">Current Role</span>
+                        <h4 class="info-value">AI / Software Intern</h4>
+                        <p class="info-sub">SalutexAI · Engineering & AI Integration</p>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-label">Achievements</span>
+                        <h4 class="info-value">Hackathon Winner & SIH Finalist</h4>
+                        <p class="info-sub">Demonstrated problem-solving in competitive environments</p>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-label">Interests</span>
+                        <h4 class="info-value">AI/ML · Vision · Web · Systems</h4>
+                        <p class="info-sub">Continuously exploring new tools and architectures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= TECHNICAL SKILLS ================= -->
+    <section id="skills" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Technologies and tools I use to design, develop, and deploy software solutions.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-code cat-icon"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-brain cat-icon"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">AI APIs</span>
+                        <span class="skill-tag">OCR Processing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-globe cat-icon"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-server cat-icon"></i>
+                        <h3>Backend Architecture</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Python Backend</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-database cat-icon"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Relational Queries</span>
+                        <span class="skill-tag">Integration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-wrench cat-icon"></i>
+                        <h3>Tools & Workflow</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">AI-Assisted Dev</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= EXPERIENCE & EDUCATION ================= -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career & Academics</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey in industry and ongoing computer science studies.</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- SalutexAI Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-badge">Internship</span>
+                                <h3 class="timeline-title">AI / Software Intern</h3>
+                                <h4 class="timeline-subtitle">SalutexAI</h4>
+                            </div>
+                            <span class="timeline-date">Present</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Working on real-world software and artificial intelligence applications.</li>
+                            <li>Developing, debugging, and maintaining clean application components.</li>
+                            <li>Collaborating closely with development team members to build robust project solutions.</li>
+                            <li>Integrating AI/ML endpoints and backend features into user-facing software.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>AI Integration</span>
+                            <span>Software Development</span>
+                            <span>Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B.E. Computer Science -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-badge badge-edu">Undergraduate</span>
+                                <h3 class="timeline-title">Bachelor of Engineering (B.E.)</h3>
+                                <h4 class="timeline-subtitle">Computer Science & Engineering</h4>
+                            </div>
+                            <span class="timeline-date">3rd Year (Ongoing)</span>
+                        </div>
+                        <p class="timeline-text">
+                            Currently pursuing B.E. in Computer Science Engineering, building strong theoretical and practical proficiency in Data Structures, Algorithms, Database Systems, Computer Networks, and Machine Learning.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FEATURED PROJECTS ================= -->
+    <section id="projects" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world applications combining artificial intelligence, computer vision, and modern web development.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/project-har.jpg" alt="AI Human Activity Recognition" class="project-img">
+                        <span class="project-badge">Edge AI</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-num">Project 01</span>
+                        <h3 class="project-title">AI Human Activity Recognition</h3>
+                        <p class="project-desc">
+                            An Edge AI based Human Activity Recognition system designed for on-board BAS experiments. Monitors astronaut activities and validates predefined experiment sequences.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Computer Vision</span>
+                            <span>AI/ML</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/hamsadevang849-sys" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/project-careerpilot.jpg" alt="CareerPilot AI" class="project-img">
+                        <span class="project-badge">Web Application</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-num">Project 02</span>
+                        <h3 class="project-title">CareerPilot AI</h3>
+                        <p class="project-desc">
+                            An AI-powered student platform designed to analyze student skills, progress, and projects, providing career-readiness insights and skill-gap analysis.
+                        </p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>AI / ML</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/hamsadevang849-sys" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="assets/project-aadhaar.jpg" alt="Aadhaar Card Scanner" class="project-img">
+                        <span class="project-badge">Computer Vision</span>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-num">Project 03</span>
+                        <h3 class="project-title">Aadhaar Card Scanner & OCR</h3>
+                        <p class="project-desc">
+                            A document-processing application designed to capture identity cards using camera feed or file upload and extract relevant structured information through OCR-based processing.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OCR</span>
+                            <span>OpenCV</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/hamsadevang849-sys" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Milestones & Achievements</h2>
+                <p class="section-subtitle">Competitive honors in hackathons and technical problem-solving.</p>
+            </div>
+
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrap">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <span class="achievement-tag">First Place</span>
+                    <h3 class="achievement-title">Hackathon Winner</h3>
+                    <p class="achievement-desc">
+                        Won a competitive hackathon by developing and presenting an innovative, functional technical solution under tight sprint deadlines.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrap">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <span class="achievement-tag">National Finalist</span>
+                    <h3 class="achievement-title">Smart India Hackathon Finalist</h3>
+                    <p class="achievement-desc">
+                        Selected as a finalist in the Smart India Hackathon (SIH), competing on a national stage solving real-world technological challenges.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">I am always interested in discussing technology, internships, collaborative projects, and new opportunities.</p>
+            </div>
+
+            <div class="contact-cards-grid">
+
+                <!-- EMAIL CARD -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <span class="contact-card-label">Email</span>
+                    <h4 class="contact-card-value">hamsadevanga849@gmail.com</h4>
+                    <p class="contact-card-sub">Available for inquiries</p>
+                    <div class="contact-card-actions">
+                        <a href="mailto:hamsadevanga849@gmail.com" class="btn btn-sm btn-primary">
+                            Email Me
+                        </a>
+                        <button class="btn btn-sm btn-outline" onclick="copyText('hamsadevanga849@gmail.com', 'Email copied!')">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PHONE NUMBER CARD -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span class="contact-card-label">Phone & WhatsApp</span>
+                    <h4 class="contact-card-value">+91 74064 73206</h4>
+                    <p class="contact-card-sub">Available for calls and messages</p>
+                    <div class="contact-card-actions">
+                        <a href="tel:+917406473206" class="btn btn-sm btn-primary">
+                            Call
+                        </a>
+                        <a href="https://wa.me/917406473206" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            WhatsApp
+                        </a>
+                        <button class="btn btn-sm btn-outline" onclick="copyText('+91 74064 73206', 'Phone number copied!')">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LINKEDIN CARD -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <span class="contact-card-label">LinkedIn</span>
+                    <h4 class="contact-card-value">Devanga Hamsa S</h4>
+                    <p class="contact-card-sub">Professional networking</p>
+                    <div class="contact-card-actions">
+                        <a href="https://www.linkedin.com/in/devanga-hamsa-s-6608aa33b" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GITHUB CARD -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <span class="contact-card-label">GitHub</span>
+                    <h4 class="contact-card-value">hamsadevang849-sys</h4>
+                    <p class="contact-card-sub">Open-source code & repositories</p>
+                    <div class="contact-card-actions">
+                        <a href="https://github.com/hamsadevang849-sys" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            Visit GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Clean Contact Form -->
+            <div class="contact-form-container">
+                <div class="contact-form-header">
+                    <h3>Send A Message</h3>
+                    <p>Have a question or proposal? Drop me a note below.</p>
+                </div>
+
+                <form id="contactForm" class="clean-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion / Opportunity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Hello Devanga Hamsa, I'd like to reach out regarding..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">Hamsa.</span>
+                <p>Devanga Hamsa S — AI/ML & Software Developer</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; <span id="year"></span> Devanga Hamsa S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ================= TOAST NOTIFICATION ================= -->
+    <div id="toastNotification" class="toast">
+        <span id="toastMessage">Copied to clipboard</span>
+    </div>
+
+    <!-- Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
